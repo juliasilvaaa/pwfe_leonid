@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: pink;
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    place-content: center;
+    height: 100vh;
+}
+
+.cirura{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 55px 22px 17px 22px;
+    background-image: url(./img/image-removebg-preview.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 49rem;
+    width: 24rem;
+    gap: 15px;
+}
+
+h2{
+    padding-top: 30px;
+}
+
+.card-container{
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+    border-radius: 0px 0px 50px 50px;
+}
+
+.card-container::-webkit-scrollbar{
+    display: none;
+}
+
+.card{
+    width: 100%;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px #0003;
+    display: grid;
+    grid-template-columns: auto 1fr 50px;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    position: relative;
+}
+
+.card img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.nome-container{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+span{
+    height: 1rem;
+    width: 1rem;
+    background-color: #f76f68;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.tempo{
+    place-self: center right;
+    color: gray;
+    font-size: 12px;
+}
+
+.contato{
+    position: absolute;
+    border-radius: 12px;
+    padding: 4px 10px;
+    font-size: 0.8rem;
+    color: #fff;
+    bottom: -15%;
+    left: 70px;
+}
